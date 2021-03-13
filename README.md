@@ -16,3 +16,5 @@ Removal
 -
 
 `sudo rm /bin/lspec`
+
+# This fork has the things previously removed from the official LexSpec repository.
