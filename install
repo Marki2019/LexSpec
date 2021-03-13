@@ -9,10 +9,9 @@ if [ "$EUID" -ne 0 ]
   then echo -e "${CYAN}Please run as root${NC}"
   exit
 fi
-
 echo -e "${CYAN}$(printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' +)"
 echo -e "${CYAN}+ ${WHITE}Downloading lspec ${CYAN}+"
-curl https://raw.githubusercontent.com/lexofficial29/LexSpec/main/lspec -s -o lspec
+curl https://raw.githubusercontent.com/Marki2019/LexSpec/main/lspec -s -o lspec #  curl https://raw.githubusercontent.com/lexofficial29/LexSpec/main/lspec -s -o lspec if you want to use the offical repo.
 echo -e "${CYAN}+ ${WHITE}Changing perms and moving lspec ${CYAN}+"
 chmod +x lspec
 sudo rm -f /bin/lspec
